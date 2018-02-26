@@ -1,0 +1,161 @@
+
+body {
+    max-width: 1300px;
+    margin: auto;
+    color: #0d686d; 
+    text-align: center;
+    background-color: #edf6f7;
+    background-image: url(london-main-photo.gif);
+}
+
+
+.intro {
+   display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 150px 1fr;
+    background-color: #cdf7d2;
+    margin-top: 20px;
+}
+
+header {
+  grid-column: 1/3;
+  grid-row: 1/1; 
+}
+
+.summary {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 50px;
+  background-color:#a2e8ab;
+  
+}
+
+.preamble {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color:#bbf7c3;
+}
+
+
+#zen-supporting {
+  display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   margin-top: 20px;
+   background-color: #b2f7e1;
+}
+
+.explanation {
+  grid-column: 1/3;
+  grid-row: 1/3; 
+  margin-top: 50px;
+  background-color:#a8ead5;
+}
+
+.participation {
+  grid-column: 1/3;
+  grid-row: 3/5; 
+  background-color:#66d6b3;
+}
+
+.benefits {
+  grid-column: 1/6;
+  grid-row: 5/6;
+  
+  background-color:#7fd1b7;
+}
+
+.requirements {
+  grid-column: 3/5;
+  grid-row: 1/5; 
+  margin-top: 100px;
+  background-color:#6fe2be;
+}
+
+footer {
+  grid-column: 1/6;
+  grid-row: 6/7;
+  background-color:#5ebc9f;
+}
+
+
+.wrapper {
+  display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 1fr 1fr;
+   margin-top: 20px;
+   background-color:#c0ddf7;
+   margin-bottom: 20px;
+}
+
+
+.design-selection {
+  grid-column: 1/3 ;
+  grid-row: 2/3;
+  background-color:#96c8f7;
+}
+
+.design-archives {
+  grid-column: 2/3 ;
+  grid-row: 1/2;
+  margin-top: 50px;
+  background-color:#adceed;
+}
+
+.zen-resources {
+  grid-column: 1/2 ;
+  grid-row: 1/2;
+  margin-top: 50px;
+  background-color:#a7bed3;
+}
+
+
+.explanation , .participation , .benefits, .requirements, footer {
+  padding: 10px 10px 10px 10px;
+}
+
+@media (max-width: 1100px ) {
+  .intro {
+    display: block;
+  }
+  
+  #zen-supporting {
+    display: block;
+  }
+  
+  .wrapper {
+    display: block;
+  }
+}
+
+
+
+@media (min-width: 2000px ) {
+  .page-wrapper {
+    display: grid;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 1fr 1fr;
+  }
+  
+  .intro {
+    grid-column: 1/2 ;
+    grid-row: 1/2;
+    margin: 100px 100px 100px 100px;
+  }
+  
+  #zen-supporting {
+    grid-column: 2/3 ;
+    grid-row: 1/3;
+    margin: 100px 100px 100px 100px;
+  }
+  
+  .benefits {
+    padding-top: 75px;
+  }
+  
+  .wrapper {
+    grid-column: 1/2 ;
+    grid-row: 2/3;
+    margin: 100px 100px 100px 100px;
+  }
+}
